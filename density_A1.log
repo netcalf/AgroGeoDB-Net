@@ -1,0 +1,85 @@
+
+==========================================================================================
+2026-01-10 08:46:56,814 [INFO] New run started at 2026-01-10T08:46:56.814643
+2026-01-10 08:46:56,814 [INFO] Arguments: {'root': '/home/ubuntu/forDataSet/AgriTraj', 'outdir': 'pic', 'wheat_eps': 221.150808, 'corn_eps': 132.893344, 'paddy_eps': 362.079318, 'tractor_eps': 159.638744, 'harvest_eps': 70.515496, 'field_value': 1, 'max_files_per_dataset': None, 'min_class_points_per_traj': 5, 'harvest_fixed_dt': 2.0, 'corn_time_col': 'time', 'corn_lat_col': 'latitude', 'corn_lon_col': 'longitude', 'corn_label_col': 'tags', 'wheat_time_col': '时间', 'wheat_lat_col': '纬度', 'wheat_lon_col': '经度', 'wheat_label_col': '标签', 'paddy_time_col': '时间', 'paddy_lat_col': '纬度', 'paddy_lon_col': '经度', 'paddy_label_col': '标记', 'tractor_time_col': 'timestamp', 'tractor_lat_col': 'latitude', 'tractor_lon_col': 'longitude', 'tractor_label_col': 'type', 'harvest_time_col': 'timestamp', 'harvest_lat_col': 'lat', 'harvest_lon_col': 'long', 'harvest_label_col': 'type'}
+2026-01-10 08:46:56,814 [INFO] Script dir: /home/ubuntu/Data/haofq/AgroGeoDB-Net
+2026-01-10 08:46:56,814 [INFO] Output dir: /home/ubuntu/Data/haofq/AgroGeoDB-Net/pic
+2026-01-10 08:46:56,814 [INFO] ==========================================================================================
+2026-01-10 08:46:56,814 [INFO] === Trajectory-level Density Evidence Generation Started ===
+2026-01-10 08:46:56,814 [INFO] Processing dataset: corn | eps=132.893344 m | cols=(time,latitude,longitude,tags)
+2026-01-10 08:46:56,815 [INFO] [corn] total files: 120
+2026-01-10 08:50:17,228 [INFO] [corn] valid trajectories processed: 120
+2026-01-10 08:50:17,228 [INFO] [corn] total points: 2101793
+2026-01-10 08:50:17,241 [INFO] [corn][TIME] field: dt_median=1.000s, f=1.0000Hz, n_dt=1554089
+2026-01-10 08:50:17,241 [INFO] [corn][TIME] road : dt_median=1.000s, f=1.0000Hz, n_dt=304306
+2026-01-10 08:50:17,367 [INFO] [corn][POINT] field: n=1760594, mean=6950.124, median=6250.000, p95=14733.000, p99=19178.000, p99/med=3.068
+2026-01-10 08:50:17,368 [INFO] [corn][POINT] road : n=341199, mean=2736.189, median=661.000, p95=11203.000, p99=18453.000, p99/med=27.917
+2026-01-10 08:50:17,368 [INFO] [corn] Tail-effect flag: False
+2026-01-10 08:50:17,368 [INFO] Processing dataset: wheat | eps=221.150808 m | cols=(时间,纬度,经度,标签)
+2026-01-10 08:50:17,368 [INFO] [wheat] total files: 150
+2026-01-10 08:51:52,895 [INFO] [wheat] valid trajectories processed: 150
+2026-01-10 08:51:52,895 [INFO] [wheat] total points: 995946
+2026-01-10 08:51:52,904 [INFO] [wheat][TIME] field: dt_median=5.000s, f=0.2000Hz, n_dt=777603
+2026-01-10 08:51:52,904 [INFO] [wheat][TIME] road : dt_median=5.000s, f=0.2000Hz, n_dt=217685
+2026-01-10 08:51:52,927 [INFO] [wheat][POINT] field: n=777812, mean=2779.054, median=2518.000, p95=5921.000, p99=7615.890, p99/med=3.025
+2026-01-10 08:51:52,927 [INFO] [wheat][POINT] road : n=218134, mean=3446.585, median=2081.000, p95=12872.000, p99=12874.000, p99/med=6.186
+2026-01-10 08:51:52,927 [INFO] [wheat] Tail-effect suspected: road mean > field mean but road median <= field median.
+2026-01-10 08:51:52,927 [INFO] Processing dataset: paddy | eps=362.079318 m | cols=(时间,纬度,经度,标记)
+2026-01-10 08:51:52,927 [INFO] [paddy] total files: 100
+2026-01-10 08:52:02,548 [INFO] [paddy] valid trajectories processed: 100
+2026-01-10 08:52:02,548 [INFO] [paddy] total points: 126602
+2026-01-10 08:52:02,549 [INFO] [paddy][TIME] field: dt_median=30.000s, f=0.0333Hz, n_dt=73520
+2026-01-10 08:52:02,549 [INFO] [paddy][TIME] road : dt_median=30.000s, f=0.0333Hz, n_dt=52457
+2026-01-10 08:52:02,553 [INFO] [paddy][POINT] field: n=73732, mean=678.520, median=595.000, p95=1276.000, p99=4072.000, p99/med=6.844
+2026-01-10 08:52:02,553 [INFO] [paddy][POINT] road : n=52870, mean=1319.469, median=763.000, p95=4191.000, p99=4218.000, p99/med=5.528
+2026-01-10 08:52:02,553 [INFO] [paddy] Tail-effect flag: False
+2026-01-10 08:52:02,553 [INFO] Processing dataset: tractor | eps=159.638744 m | cols=(timestamp,latitude,longitude,type)
+2026-01-10 08:52:02,553 [INFO] [tractor] total files: 60
+2026-01-10 08:53:42,974 [INFO] [tractor] valid trajectories processed: 60
+2026-01-10 08:53:42,974 [INFO] [tractor] total points: 1040121
+2026-01-10 08:53:42,984 [INFO] [tractor][TIME] field: dt_median=1.000s, f=1.0000Hz, n_dt=868017
+2026-01-10 08:53:42,984 [INFO] [tractor][TIME] road : dt_median=1.000s, f=1.0000Hz, n_dt=171782
+2026-01-10 08:53:43,008 [INFO] [tractor][POINT] field: n=868123, mean=7502.750, median=6301.000, p95=17990.000, p99=20519.000, p99/med=3.256
+2026-01-10 08:53:43,009 [INFO] [tractor][POINT] road : n=171998, mean=698.194, median=111.000, p95=4604.000, p99=9191.150, p99/med=82.803
+2026-01-10 08:53:43,009 [INFO] [tractor] Tail-effect flag: False
+2026-01-10 08:53:43,009 [INFO] Processing dataset: harvest | eps=70.515496 m | cols=(timestamp,lat,long,type)
+2026-01-10 08:53:43,009 [INFO] [harvest] total files: 100
+2026-01-10 08:55:15,048 [INFO] [harvest] valid trajectories processed: 100
+2026-01-10 08:55:15,048 [INFO] [harvest] total points: 1152867
+2026-01-10 08:55:15,057 [INFO] [harvest][TIME] field: dt_median=2.000s, f=0.5000Hz, n_dt=873283
+2026-01-10 08:55:15,057 [INFO] [harvest][TIME] road : dt_median=2.000s, f=0.5000Hz, n_dt=279384
+2026-01-10 08:55:15,083 [INFO] [harvest][POINT] field: n=873383, mean=2404.789, median=1967.000, p95=5665.000, p99=8803.000, p99/med=4.475
+2026-01-10 08:55:15,083 [INFO] [harvest][POINT] road : n=279484, mean=8420.771, median=1772.000, p95=27492.000, p99=27492.000, p99/med=15.515
+2026-01-10 08:55:15,083 [INFO] [harvest] Tail-effect suspected: road mean > field mean but road median <= field median.
+2026-01-10 08:55:15,095 [INFO] Trajectory-level stats CSV saved to /home/ubuntu/Data/haofq/AgroGeoDB-Net/pic/density_traj_level_stats.csv
+2026-01-10 08:55:15,096 [INFO] Total trajectories (rows): 530; usable for traj-level: 520 (min_class_points_per_traj=5)
+2026-01-10 08:55:15,100 [INFO] Counterexample trajectories CSV saved to /home/ubuntu/Data/haofq/AgroGeoDB-Net/pic/density_traj_counterexamples.csv (rows=91)
+2026-01-10 08:55:15,102 [INFO] [corn][TRAJ] n_traj=114 | MEAN: field=5809.446 (SE=327.285), road=2569.676 (SE=228.166), frac(field>road)=0.974, counterexamples=3 | MEDIAN: field=6077.206 (SE=346.645), road=2284.452 (SE=279.016), frac(field>road)=0.912, counterexamples=10
+2026-01-10 08:55:15,103 [INFO] [corn][TRAJ] winsorized-mean@99%: field=5808.597, road=2567.754
+2026-01-10 08:55:15,103 [INFO] [corn][TIME-TRAJ] road : median(dt_median_traj)=1.000s, median(f_traj)=1.0000Hz, n_traj_dt=114
+2026-01-10 08:55:15,103 [INFO] [corn][TIME-TRAJ] field: median(dt_median_traj)=1.000s, median(f_traj)=1.0000Hz, n_traj_dt=114
+2026-01-10 08:55:15,104 [INFO] [wheat][TRAJ] n_traj=150 | MEAN: field=2411.837 (SE=114.500), road=1918.434 (SE=144.881), frac(field>road)=0.880, counterexamples=18 | MEDIAN: field=2505.620 (SE=122.093), road=1971.867 (SE=163.639), frac(field>road)=0.820, counterexamples=27
+2026-01-10 08:55:15,104 [INFO] [wheat][TRAJ] winsorized-mean@99%: field=2411.625, road=1917.459
+2026-01-10 08:55:15,104 [INFO] [wheat][TIME-TRAJ] road : median(dt_median_traj)=5.000s, median(f_traj)=0.2000Hz, n_traj_dt=150
+2026-01-10 08:55:15,104 [INFO] [wheat][TIME-TRAJ] field: median(dt_median_traj)=5.000s, median(f_traj)=0.2000Hz, n_traj_dt=150
+2026-01-10 08:55:15,105 [INFO] [paddy][TRAJ] n_traj=100 | MEAN: field=600.508 (SE=45.769), road=593.315 (SE=64.473), frac(field>road)=0.740, counterexamples=26 | MEDIAN: field=653.855 (SE=59.891), road=625.735 (SE=69.331), frac(field>road)=0.680, counterexamples=32
+2026-01-10 08:55:15,105 [INFO] [paddy][TRAJ] winsorized-mean@99%: field=600.477, road=593.195
+2026-01-10 08:55:15,105 [INFO] [paddy][TIME-TRAJ] road : median(dt_median_traj)=30.000s, median(f_traj)=0.0333Hz, n_traj_dt=100
+2026-01-10 08:55:15,105 [INFO] [paddy][TIME-TRAJ] field: median(dt_median_traj)=30.000s, median(f_traj)=0.0333Hz, n_traj_dt=100
+2026-01-10 08:55:15,106 [INFO] [tractor][TRAJ] n_traj=56 | MEAN: field=6764.264 (SE=544.237), road=1211.130 (SE=173.928), frac(field>road)=1.000, counterexamples=0 | MEDIAN: field=6977.366 (SE=569.853), road=619.375 (SE=204.136), frac(field>road)=1.000, counterexamples=0
+2026-01-10 08:55:15,106 [INFO] [tractor][TRAJ] winsorized-mean@99%: field=6763.792, road=1207.393
+2026-01-10 08:55:15,106 [INFO] [tractor][TIME-TRAJ] road : median(dt_median_traj)=1.000s, median(f_traj)=1.0000Hz, n_traj_dt=56
+2026-01-10 08:55:15,106 [INFO] [tractor][TIME-TRAJ] field: median(dt_median_traj)=1.000s, median(f_traj)=1.0000Hz, n_traj_dt=56
+2026-01-10 08:55:15,107 [INFO] [harvest][TRAJ] n_traj=100 | MEAN: field=2081.436 (SE=118.038), road=1576.560 (SE=389.887), frac(field>road)=0.880, counterexamples=12 | MEDIAN: field=2111.160 (SE=124.434), road=1727.540 (SE=448.513), frac(field>road)=0.850, counterexamples=15
+2026-01-10 08:55:15,107 [INFO] [harvest][TRAJ] winsorized-mean@99%: field=2080.931, road=1575.605
+2026-01-10 08:55:15,107 [INFO] [harvest][TIME-TRAJ] road : median(dt_median_traj)=2.000s, median(f_traj)=0.5000Hz, n_traj_dt=100
+2026-01-10 08:55:15,107 [INFO] [harvest][TIME-TRAJ] field: median(dt_median_traj)=2.000s, median(f_traj)=0.5000Hz, n_traj_dt=100
+2026-01-10 08:55:15,239 [INFO] Substituting symbol E from STIXNonUnicode
+2026-01-10 08:55:15,285 [INFO] Substituting symbol E from STIXNonUnicode
+2026-01-10 08:55:15,325 [INFO] Substituting symbol E from STIXNonUnicode
+2026-01-10 08:55:15,426 [INFO] Substituting symbol E from STIXNonUnicode
+2026-01-10 08:55:15,468 [INFO] Substituting symbol E from STIXNonUnicode
+2026-01-10 08:55:15,507 [INFO] Substituting symbol E from STIXNonUnicode
+2026-01-10 08:55:15,555 [INFO] Figure saved to /home/ubuntu/Data/haofq/AgroGeoDB-Net/pic/density_traj_mean_bar.pdf
+2026-01-10 08:55:15,555 [INFO] Figure saved to /home/ubuntu/Data/haofq/AgroGeoDB-Net/pic/density_traj_median_bar.pdf
+2026-01-10 08:55:15,555 [INFO] === Finished ===

@@ -28,8 +28,8 @@ Each GNSS point is converted into a feature vector combining:
 - Local density & directional coherence  
 - Multi-scale spacing descriptors  
 
-### 3. **Density-Regularised VAE + Residual BiLSTM**
-- VAE learns geometry-aligned latent embeddings  
+### 3. **Density-Regularised latent Encoder + Residual BiLSTM**
+- latent Encoder learns geometry-aligned latent embeddings  
 - Residual BiLSTM captures bidirectional long-range temporal structure  
 - Linear head outputs per-point field/road label  
 
